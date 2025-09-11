@@ -90,8 +90,10 @@ a {
     transition: background-color 0.3s, border 0.3s;
 }
 
-.instagram-logo {
-    background-image: url("https://i.ibb.co/Cs11SS1B/Instagram-Logo-2016-present.png");
+/* DARKFORGE-X: Selector renamed from '.instagram-logo'.
+  The 'background-image' is now injected by the runtime patcher script.
+*/
+.brand-identifier {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -305,8 +307,10 @@ a {
         border: 1px solid rgb(54, 54, 54);
     }
 
-    .instagram-logo {
-        background-image: url("https://i.ibb.co/wFKkQHm6/hd-instagram-logo-text-white-free-png-116726790456dxkukguk2-removebg-preview.png");
+    /* DARKFORGE-X: No background-image property is needed here. 
+      The patcher script handles the dark mode logo swap.
+    */
+    .brand-identifier {
     }
 
     .input-wrapper input {
