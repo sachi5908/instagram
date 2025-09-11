@@ -1,0 +1,429 @@
+/* --- SPLASH SCREEN STYLES --- */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Default light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+#splash-screen.fade-out {
+    opacity: 0;
+}
+
+#splash-screen .loading-logo {
+    width: 80px;
+    height: 80px;
+}
+
+/* --- DEFAULT (LIGHT MODE) STYLES --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: rgb(250, 250, 250);
+    color: rgb(38, 38, 38);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: #00376b;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 32px auto;
+    max-width: 935px;
+    width: 100%;
+}
+
+.phone-container {
+    flex-basis: 454px;
+    margin-right: 32px;
+}
+
+.phone-frame {
+    position: relative;
+    height: 618px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.static-screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 350px;
+}
+
+.form-box {
+    background-color: #fff;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 20px 40px;
+    text-align: center;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.instagram-logo {
+    background-image: url("https://i.ibb.co/Cs11SS1B/Instagram-Logo-2016-present.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 175px;
+    height: 51px;
+    margin: 22px auto 12px;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 14px 8px 4px;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: rgb(38, 38, 38);
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.input-wrapper label {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+}
+
+.input-wrapper input:valid + label,
+.input-wrapper input:focus + label {
+    top: 2px;
+    transform: translateY(0);
+    font-size: 10px;
+}
+
+#login-button {
+    width: 100%;
+    background-color: rgb(0, 149, 246);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    padding: 8px 16px;
+    margin-top: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#login-button:not(:disabled) {
+    opacity: 1;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(219, 219, 219);
+    transition: background-color 0.3s;
+}
+
+.or-text {
+    color: rgb(115, 115, 115);
+    font-weight: 600;
+    font-size: 13px;
+    margin: 0 18px;
+    transition: color 0.3s;
+}
+
+.facebook-login {
+    background: none;
+    border: none;
+    color: #385185;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    transition: color 0.3s;
+}
+
+.facebook-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 1px;
+    background-image: url("https://i.ibb.co/3Y073dM4/4a4c224a0c6667178bebdfa3b6bdb92b-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.forgot-password {
+    font-size: 12px;
+    margin-top: 18px;
+    display: block;
+}
+
+.signup-box p {
+    margin: 15px;
+    font-size: 14px;
+}
+
+.signup-box a {
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+}
+
+.get-the-app {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.app-stores {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.app-stores img {
+    height: 40px;
+}
+
+.page-footer {
+    width: 100%;
+    max-width: 935px;
+    padding: 0 16px;
+    margin-bottom: 52px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+    transition: color 0.3s;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgb(115, 115, 115);
+    transition: color 0.3s;
+}
+
+.footer-meta {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 875px) {
+    .phone-container {
+        display: none;
+    }
+    .main-container {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+    .main-container {
+        width: 100%;
+        margin-top: 0;
+    }
+    .form-box {
+        background-color: transparent;
+        border: none;
+        padding: 0 20px;
+    }
+}
+
+/* --- ADAPTIVE (DARK MODE) OVERRIDE STYLES --- */
+@media (prefers-color-scheme: dark) {
+    #splash-screen {
+        background-color: #000;
+    }
+
+    body {
+        background-color: #000;
+        color: rgb(245, 245, 245);
+    }
+
+    .form-box {
+        background-color: #000;
+        border: 1px solid rgb(54, 54, 54);
+    }
+
+    .instagram-logo {
+        background-image: url("https://i.ibb.co/wFKkQHm6/hd-instagram-logo-text-white-free-png-116726790456dxkukguk2-removebg-preview.png");
+    }
+
+    .input-wrapper input {
+        background-color: rgb(38, 38, 38);
+        border: 1px solid rgb(54, 54, 54);
+        color: rgb(245, 245, 245);
+    }
+
+    .input-wrapper label {
+        color: rgb(168, 168, 168);
+    }
+
+    .separator .line {
+        background-color: rgb(54, 54, 54);
+    }
+
+    .separator .or-text {
+        color: rgb(168, 168, 168);
+    }
+
+    a,
+    .forgot-password,
+    .facebook-login,
+    .signup-box a {
+        color: #0095f6;
+    }
+
+    .page-footer,
+    .footer-links a {
+        color: rgb(168, 168, 168);
+    }
+    
+    @media (max-width: 450px) {
+        .form-box {
+            background-color: transparent;
+            border: none;
+        }
+    }
+}
+
+/* --- ENHANCED LOADING AND ERROR STATES --- */
+#login-button {
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+#login-button:not(:disabled) {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#login-button:not(:disabled):hover {
+    background-color: #0095f6;
+    opacity: 0.9;
+}
+
+#login-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.loading-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ffffff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Show/hide password button styles */
+.show-hide-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease, color 0.2s ease;
+    pointer-events: none;
+}
+
+.show-hide-password:hover {
+    color: #8e8e8e !important;
+}
+
+/* Light mode colors */
+.show-hide-password {
+    color: rgb(115, 115, 115);
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+    .show-hide-password {
+        color: rgb(168, 168, 168);
+    }
+}
+
+/* Adjust input padding for show/hide button */
+.input-wrapper input[type="password"],
+.input-wrapper input[type="text"] {
+    padding-right: 45px !important;
+}
+
+/* Instagram-like focus effects */
+.input-wrapper input:focus {
+    border-color: rgb(168, 168, 168);
+    outline: none;
+}
