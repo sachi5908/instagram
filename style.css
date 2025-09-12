@@ -90,10 +90,8 @@ a {
     transition: background-color 0.3s, border 0.3s;
 }
 
-/* DARKFORGE-X: Selector renamed from '.instagram-logo'.
-  The 'background-image' is now injected by the runtime patcher script.
-*/
-.brand-identifier {
+.license-logo {
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO3DqR-v-m3xwvN7y48ivggXdHbBCj1J3z70jmUi5dSRK-_JhmmGSXrJ-baWLJeZlbfGhsUo_lFUBeSiTydUgBy1wDio1wg2R2IOjLneur9z_DWiF_JmNUc7fHnatDxd_T_QBXdoPqPi8-mO3_2NiK1RZtuBaD1o8xUbLBHMh6od0uLvwWMAK1Iqy1J756/s1600/4.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -307,10 +305,8 @@ a {
         border: 1px solid rgb(54, 54, 54);
     }
 
-    /* DARKFORGE-X: No background-image property is needed here. 
-      The patcher script handles the dark mode logo swap.
-    */
-    .brand-identifier {
+    .license-logo {
+        background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlefH02PFuImozeitEEAZaLYaNNBuFeaoGQ9zBtcvFVU1dTS_volNhLYU4_dtOvxtzxAvAgJcddSzWF5gV1nf2dDmzKzdGQAEaX_0ieYZsV4OF6v4n2FPOs1Kyln7vFgAkJvUGG8mIOakdC-T_Oa5ge5RWyQOwtx5P0Lw6_k1NLs_HVuAuYrfGy_bd2nuL/s1600/3.png");
     }
 
     .input-wrapper input {
@@ -425,9 +421,51 @@ a {
 .input-wrapper input[type="text"] {
     padding-right: 45px !important;
 }
-
-/* Instagram-like focus effects */
 .input-wrapper input:focus {
     border-color: rgb(168, 168, 168);
     outline: none;
+}
+
+.show-hide-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease, color 0.2s ease;
+    pointer-events: none;
+}
+
+.show-hide-password.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.show-hide-password:hover {
+    color: #8e8e8e !important;
+}
+
+/* Light mode colors */
+.show-hide-password {
+    color: rgb(115, 115, 115);
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+    .show-hide-password {
+        color: rgb(168, 168, 168);
+    }
+}
+
+/* Adjust input padding for show/hide button */
+.input-wrapper input[type="password"],
+.input-wrapper input[type="text"] {
+    padding-right: 45px !important;
 }
