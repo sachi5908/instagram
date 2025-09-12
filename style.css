@@ -292,7 +292,6 @@ a {
         background-color: #fff;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
     .mobile-header {
         display: block;
@@ -308,9 +307,10 @@ a {
     .main-container {
         width: 100%;
         margin: 0;
-        justify-content: center;
-        padding-top: 0;
         flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .form-container {
         margin-top: 0px;
@@ -416,7 +416,6 @@ a {
         display: none;
     }
 }
-
 /* --- ADAPTIVE (DARK MODE) OVERRIDE STYLES --- */
 body.dark-mode {
     background-color: #000000;
