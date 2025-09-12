@@ -293,19 +293,14 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* Added padding to account for fixed header and provide bottom space */
-        padding-top: 50px;
-        padding-bottom: 20px;
-        box-sizing: border-box;
     }
     .mobile-header {
         display: block;
         position: fixed;
-        top: 0;
+        top: 15px;
         left: 0;
         width: 100%;
         text-align: center;
-        padding: 15px 0;
         font-size: 17px;
         color: #8e8e8e;
         background-color: #fff;
@@ -313,19 +308,19 @@ a {
     .main-container {
         width: 100%;
         margin: 0;
-        /* Changed to 'center' to vertically center the form in the available space */
-        justify-content: center;
+        justify-content: flex-start;
+        padding-top: 0px;
         flex-grow: 1;
-        padding-top: 0px; /* Reset padding as it's handled by body now */
     }
     .form-container {
+        margin-top: 0px;
         flex-basis: auto;
         width: 100%;
     }
     .form-box {
         background-color: transparent;
         border: none;
-        padding: 0 20px;
+        padding: 0 10px;
     }
     .signup-box {
         display: none;
@@ -335,24 +330,22 @@ a {
     }
     .mobile-logo{
         display: block;
-        width: 80px; /* Slightly smaller logo */
-        height: 80px;
-        /* Reduced vertical margins significantly */
-        margin: 10px auto 25px;
+        width: 90px;
+        height: 90px;
+        margin: 0px auto 70px;
     }
-
+    
     .separator, .social-login {
         display: none;
     }
 
     .input-wrapper {
-        /* Reduced bottom margin */
-        margin-bottom: 12px;
+        margin-bottom: 17px;
     }
 
     .input-wrapper input {
-        padding: 26px 20px 6px; /* Adjusted padding */
-        font-size: 18px; /* Slightly smaller font for better fit */
+        padding: 28px 20px 4px;
+        font-size: 20px;
         background-color: #fafafa;
         border-radius: 17px;
     }
@@ -369,23 +362,21 @@ a {
 
     .input-wrapper input:valid + label,
     .input-wrapper input:focus + label {
-        top: 8px; /* Adjusted label position */
-        font-size: 11px;
+        top: 9px;
+        font-size: 12px;
     }
 
     #login-button {
-        /* Reduced top margin */
-        margin-top: 8px;
+        margin-top: 10px;
         padding: 12px 16px;
         border-radius: 20px;
         font-size: 17px;
     }
 
     .forgot-password {
-        /* Reduced top margin */
-        margin-top: 12px;
+        margin-top: 15px;
         font-weight: 500;
-        font-size: 16px; /* Slightly smaller font */
+        font-size: 17px;
         color: #00376b;
     }
     .page-footer {
