@@ -379,6 +379,7 @@ a {
         font-weight: 500;
         font-size: 17px;
         color: #00376b;
+        margin-bottom: 20px;
     }
     .page-footer {
         display: none;
@@ -401,7 +402,7 @@ a {
         font-weight: 600;
         border-radius: 20px;
         font-size: 16px;
-        margin-top: 180px;
+        margin-top: 70px;
         margin-bottom: 20px;
     }
     .mobile-meta-logo {
@@ -569,5 +570,6 @@ body.dark-mode .show-hide-password svg path {
 .input-wrapper input[type="password"] {
     padding-right: 45px !important;
 }
+
 
 
