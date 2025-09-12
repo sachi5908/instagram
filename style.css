@@ -314,7 +314,6 @@ a {
     }
     .form-container {
         margin-top: 0px;
-        flex-basis: auto;
         width: 100%;
     }
     .form-box {
