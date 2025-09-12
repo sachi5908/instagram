@@ -297,7 +297,7 @@ a {
         display: block;
         position: fixed;
         top: 15px;
-        margin-bottom: 15px;
+        
         left: 0;
         width: 100%;
         text-align: center;
@@ -571,6 +571,7 @@ body.dark-mode .show-hide-password svg path {
 .input-wrapper input[type="password"] {
     padding-right: 45px !important;
 }
+
 
 
 
