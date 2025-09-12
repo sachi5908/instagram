@@ -310,12 +310,13 @@ a {
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
     }
     .form-container {
         margin-top: 0px;
         flex-basis: auto;
         width: 100%;
+        margin-bottom: 30px;
     }
     .form-box {
         background-color: transparent;
