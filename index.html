@@ -31,6 +31,10 @@
         }
 
         /* --- DEFAULT (LIGHT MODE) STYLES --- */
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: rgb(250, 250, 250);
@@ -130,7 +134,6 @@
             background-color: rgb(250, 250, 250);
             border: 1px solid rgb(219, 219, 219);
             border-radius: 6px;
-            box-sizing: border-box;
             font-size: 12px;
             color: rgb(38, 38, 38);
             transition: background-color 0.3s, border 0.3s, color 0.3s;
@@ -246,7 +249,6 @@
             max-width: 935px;
             padding: 0 16px;
             margin-bottom: 52px;
-            box-sizing: border-box;
             font-size: 12px;
             color: rgb(115, 115, 115);
             transition: color 0.3s;
@@ -296,8 +298,11 @@
             }
         }
         
-        /* --- MOBILE VIEW STYLES (UPDATED TO MATCH SCREENSHOT) --- */
+        /* --- MOBILE VIEW STYLES (UPDATED) --- */
         @media (max-width: 450px) {
+            html, body {
+                overflow-x: hidden;
+            }
             body {
                 background-color: #fff;
                 display: flex;
@@ -320,14 +325,14 @@
                 width: 100%;
                 margin: 0;
                 justify-content: center;
-                padding-top: 80px;
+                padding-top: 60px;
+                padding-bottom: 20px;
                 flex-grow: 1;
             }
             .form-container {
                 flex-basis: auto;
                 width: 100%;
                 padding: 0 32px;
-                box-sizing: border-box;
             }
             .form-box {
                 background-color: transparent;
@@ -344,16 +349,20 @@
                 display: block;
                 width: 50px;
                 height: 50px;
-                margin: 0 auto 35px;
+                margin: 0 auto 40px;
             }
 
             .separator, .social-login {
                 display: none;
             }
 
+            .input-wrapper {
+                margin-bottom: 12px;
+            }
+
             .input-wrapper input {
-                padding: 14px 12px;
-                font-size: 14px;
+                padding: 16px 14px;
+                font-size: 16px;
                 background-color: #fafafa;
                 border: 1px solid rgb(219, 219, 219);
                 border-radius: 6px;
@@ -364,34 +373,33 @@
                 outline: none;
             }
 
-            /* --- Change Label to look like a placeholder --- */
             .input-wrapper label {
                 top: 50%;
-                left: 12px;
+                left: 14px;
                 transform: translateY(-50%);
-                font-size: 14px;
+                font-size: 16px;
                 color: rgb(115, 115, 115);
-                transition: opacity 0.2s ease-out; /* Animate opacity only */
+                transition: opacity 0.2s ease-out;
             }
 
             .input-wrapper input:valid + label,
             .input-wrapper input:focus + label {
                 opacity: 0;
-                /* Override desktop styles to keep it in place */
                 top: 50%;
                 transform: translateY(-50%);
-                font-size: 14px;
+                font-size: 16px;
             }
 
             #login-button {
-                padding: 14px 16px;
+                padding: 16px;
                 border-radius: 30px;
-                margin-top: 15px;
+                margin-top: 20px;
+                font-size: 16px;
             }
             .forgot-password {
-                margin-top: 20px;
+                margin-top: 24px;
                 font-weight: 500;
-                font-size: 12px;
+                font-size: 14px;
                 color: #0095f6;
             }
             .page-footer {
@@ -403,18 +411,17 @@
                 align-items: center;
                 width: 100%;
                 padding: 20px 32px;
-                box-sizing: border-box;
             }
             .create-account-link {
                 display: block;
                 width: 100%;
                 text-align: center;
-                padding: 14px;
+                padding: 16px;
                 border: 1px solid #0095f6;
                 color: #0095f6;
                 font-weight: 600;
                 border-radius: 30px;
-                font-size: 14px;
+                font-size: 16px;
                 margin-bottom: 40px;
             }
             .mobile-meta-logo {
@@ -619,13 +626,13 @@
                             <span class="show-hide-text">Show</span>
                             <span class="show-hide-icons">
                                 <svg aria-label="Show password" id="eye-open" role="img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <svg aria-label="Hide password" id="eye-closed" role="img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                                    <path d="M15.6487 5.39489C14.4859 4.95254 13.2582 4.72021 12 4.72021C8.46997 4.72021 5.17997 6.54885 2.88997 9.71381C1.98997 10.9534 1.98997 13.037 2.88997 14.2766C3.34474 14.9051 3.83895 15.481 4.36664 16.0002M19.3248 7.69653C19.9692 8.28964 20.5676 8.96425 21.11 9.71381C22.01 10.9534 22.01 13.037 21.11 14.2766C18.82 17.4416 15.53 19.2702 12 19.2702C10.6143 19.2702 9.26561 18.9884 7.99988 18.4547" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M15 12C15 13.6592 13.6592 15 12 15M14.0996 9.85541C13.5589 9.32599 12.8181 9 12 9C10.3408 9 9 10.3408 9 12C9 12.7293 9.25906 13.3971 9.69035 13.9166" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 21.0002L22 2.7002" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M15.6487 5.39489C14.4859 4.95254 13.2582 4.72021 12 4.72021C8.46997 4.72021 5.17997 6.54885 2.88997 9.71381C1.98997 10.9534 1.98997 13.037 2.88997 14.2766C3.34474 14.9051 3.83895 15.481 4.36664 16.0002M19.3248 7.69653C19.9692 8.28964 20.5676 8.96425 21.11 9.71381C22.01 10.9534 22.01 13.037 21.11 14.2766C18.82 17.4416 15.53 19.2702 12 19.2702C10.6143 19.2702 9.26561 18.9884 7.99988 18.4547" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 12C15 13.6592 13.6592 15 12 15M14.0996 9.85541C13.5589 9.32599 12.8181 9 12 9C10.3408 9 9 10.3408 9 12C9 12.7293 9.25906 13.3971 9.69035 13.9166" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 21.0002L22 2.7002" stroke-width="1.5" stroke-linecap="round"/>
                                 </svg>
                             </span>
                         </button>
@@ -833,3 +840,4 @@
     </script>
 </body>
 </html>
+
