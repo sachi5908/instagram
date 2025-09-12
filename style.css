@@ -310,7 +310,7 @@ a {
         width: 100%;
         margin: 0;
         justify-content: flex-start;
-        padding-top: 120px;
+        padding-top: 80px;
         flex-grow: 1;
     }
     .form-container {
@@ -550,3 +550,4 @@ body.dark-mode .show-hide-password svg path {
 .input-wrapper input[type="password"] {
     padding-right: 45px !important;
 }
+
