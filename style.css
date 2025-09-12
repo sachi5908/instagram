@@ -296,9 +296,8 @@ a {
     .mobile-header {
         display: block;
         position: fixed;
-        top: 0;
+        top: 15px;
         left: 0;
-        padding: 15px;
         width: 100%;
         text-align: center;
         font-size: 17px;
@@ -334,7 +333,7 @@ a {
         display: block;
         width: 90px;
         height: 90px;
-        margin: 30px auto 70px;
+        margin: 0px auto 70px;
     }
     
     .separator, .social-login {
