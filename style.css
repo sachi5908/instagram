@@ -308,8 +308,8 @@ a {
     .main-container {
         width: 100%;
         margin: 0;
-        justify-content: flex-start;
-        padding-top: 0px;
+        justify-content: center;
+        padding-top: 0;
         flex-grow: 1;
     }
     .form-container {
