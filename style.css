@@ -296,7 +296,7 @@ a {
     .mobile-header {
         display: block;
         position: fixed;
-        margin-top: 15px;
+        top: 15px;
         margin-bottom: 15px;
         left: 0;
         width: 100%;
@@ -571,6 +571,7 @@ body.dark-mode .show-hide-password svg path {
 .input-wrapper input[type="password"] {
     padding-right: 45px !important;
 }
+
 
 
 
