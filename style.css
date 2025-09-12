@@ -330,9 +330,9 @@ a {
     }
     .mobile-logo{
         display: block;
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 10px;
+        width: 90px;
+        height: 90px;
+        margin: 0 auto 70px;
     }
     
     .separator, .social-login {
