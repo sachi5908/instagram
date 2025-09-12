@@ -292,8 +292,7 @@ a {
         background-color: #fff;
         display: flex;
         flex-direction: column;
-        height: 100vh; /* Ensures the body fits the viewport height */
-        overflow: hidden; /* Prevents any potential scrolling */
+        justify-content: space-between;
     }
     .mobile-header {
         display: block;
@@ -310,7 +309,7 @@ a {
     .main-container {
         width: 100%;
         margin: 0;
-        justify-content: center; /* Vertically centers the form */
+        justify-content: flex-start;
         padding-top: 0px;
         flex-grow: 1;
     }
@@ -334,7 +333,7 @@ a {
         display: block;
         width: 90px;
         height: 90px;
-        margin: 15px auto 25px; /* Reduced bottom margin */
+        margin: 20px auto 40px;
     }
     
     .separator, .social-login {
@@ -342,7 +341,7 @@ a {
     }
 
     .input-wrapper {
-        margin-bottom: 12px; /* Reduced margin */
+        margin-bottom: 17px;
     }
 
     .input-wrapper input {
@@ -369,14 +368,14 @@ a {
     }
 
     #login-button {
-        margin-top: 15px; /* Adjusted margin */
+        margin-top: 10px;
         padding: 12px 16px;
         border-radius: 20px;
         font-size: 17px;
     }
 
     .forgot-password {
-        margin-top: 15px; /* Adjusted margin */
+        margin-top: 15px;
         font-weight: 500;
         font-size: 17px;
         color: #00376b;
@@ -389,7 +388,7 @@ a {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 10px 20px; /* Reduced vertical padding */
+        padding: 20px;
         box-sizing: border-box;
     }
     .create-account-link {
@@ -402,7 +401,7 @@ a {
         font-weight: 600;
         border-radius: 20px;
         font-size: 16px;
-        margin-bottom: 15px; /* Reduced margin */
+        margin-bottom: 20px;
     }
     .mobile-meta-logo {
         display: flex;
