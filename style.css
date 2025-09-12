@@ -362,6 +362,7 @@ a {
 
     .input-wrapper input:valid + label,
     .input-wrapper input:focus + label {
+        margin-top: 5px;
         font-size: 12px;
     }
 
