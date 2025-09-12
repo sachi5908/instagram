@@ -310,7 +310,7 @@ a {
         width: 100%;
         margin: 0;
         justify-content: flex-start;
-        padding-top: 20px;
+        padding-top: 0px;
         flex-grow: 1;
     }
     .form-container {
@@ -330,9 +330,9 @@ a {
     }
     .mobile-logo{
         display: block;
-        width: 90px;
-        height: 90px;
-        margin: 20px auto 10px;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 10px;
     }
     
     .separator, .social-login {
