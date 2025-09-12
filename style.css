@@ -310,7 +310,7 @@ a {
         width: 100%;
         margin: 0;
         justify-content: flex-start;
-        padding-top: 120px;
+        padding-top: 10px;
         flex-grow: 1;
     }
     .form-container {
