@@ -50,6 +50,8 @@ a {
     margin: 32px auto;
     max-width: 935px;
     width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .phone-container {
@@ -78,6 +80,8 @@ a {
     flex-direction: column;
     justify-content: center;
     flex-basis: 350px;
+    width: 100%;
+    max-width: 350px;
 }
 
 .form-box {
@@ -88,6 +92,8 @@ a {
     padding: 20px 40px;
     text-align: center;
     transition: background-color 0.3s, border 0.3s;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .license-logo {
@@ -115,6 +121,7 @@ a {
     font-size: 12px;
     color: rgb(38, 38, 38);
     transition: background-color 0.3s, border 0.3s, color 0.3s;
+    height: 44px;
 }
 
 .input-wrapper label {
@@ -146,6 +153,8 @@ a {
     margin-top: 12px;
     cursor: pointer;
     opacity: 0.7;
+    height: 44px;
+    font-size: 14px;
 }
 
 #login-button:not(:disabled) {
@@ -247,13 +256,14 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 12px 16px;
     margin-bottom: 12px;
 }
 
 .footer-links a {
     color: rgb(115, 115, 115);
     transition: color 0.3s;
+    white-space: nowrap;
 }
 
 .footer-meta {
@@ -261,6 +271,7 @@ a {
     justify-content: center;
     gap: 16px;
     margin-top: 12px;
+    flex-wrap: wrap;
 }
 
 /* --- RESPONSIVE DESIGN --- */
@@ -268,24 +279,90 @@ a {
     .phone-container {
         display: none;
     }
+    
     .main-container {
         margin-top: 0;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    
+    .form-container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 0 16px;
+    }
+    
+    .form-box {
+        padding: 20px;
+    }
+    
+    .footer-links {
+        gap: 10px 12px;
+    }
+    
+    .footer-links a {
+        font-size: 11px;
+    }
+    
+    .footer-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
     }
 }
 
 @media (max-width: 450px) {
     body {
         justify-content: flex-start;
-        padding-top: 40px;
+        padding-top: 20px;
     }
+    
     .main-container {
         width: 100%;
         margin-top: 0;
+        padding: 0 12px;
     }
+    
     .form-box {
         background-color: transparent;
         border: none;
         padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    
+    .form-container {
+        max-width: 100%;
+    }
+    
+    .footer-links {
+        gap: 8px 10px;
+    }
+    
+    .footer-links a {
+        font-size: 10px;
+    }
+    
+    .input-wrapper input {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 320px) {
+    .footer-links {
+        gap: 6px 8px;
+    }
+    
+    .footer-links a {
+        font-size: 9px;
+    }
+    
+    .form-box {
+        padding: 0 12px;
     }
 }
 
@@ -398,49 +475,7 @@ a {
     opacity: 0;
     transition: opacity 0.2s ease, color 0.2s ease;
     pointer-events: none;
-}
-
-.show-hide-password:hover {
-    color: #8e8e8e !important;
-}
-
-/* Light mode colors */
-.show-hide-password {
-    color: rgb(115, 115, 115);
-}
-
-/* Dark mode colors */
-@media (prefers-color-scheme: dark) {
-    .show-hide-password {
-        color: rgb(168, 168, 168);
-    }
-}
-
-/* Adjust input padding for show/hide button */
-.input-wrapper input[type="password"],
-.input-wrapper input[type="text"] {
-    padding-right: 45px !important;
-}
-.input-wrapper input:focus {
-    border-color: rgb(168, 168, 168);
-    outline: none;
-}
-
-.show-hide-password {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    transition: opacity 0.2s ease, color 0.2s ease;
-    pointer-events: none;
+    z-index: 2;
 }
 
 .show-hide-password.visible {
@@ -468,4 +503,27 @@ a {
 .input-wrapper input[type="password"],
 .input-wrapper input[type="text"] {
     padding-right: 45px !important;
+}
+
+.input-wrapper input:focus {
+    border-color: rgb(168, 168, 168);
+    outline: none;
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Improve touch targets for mobile */
+input, button {
+    min-height: 44px; /* Apple's recommended minimum touch target size */
+}
+
+/* Prevent zoom on iOS input focus */
+@media screen and (max-width: 768px) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
 }
