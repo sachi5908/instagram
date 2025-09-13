@@ -330,9 +330,9 @@ a {
     }
     .mobile-logo{
         display: block;
-        width: 22vw; 
+        width: 18vw; 
         height: auto; 
-        margin: 0 auto 15vh;
+        margin: 0 auto 10vh;
     }
     
     .separator, .social-login {
@@ -344,8 +344,8 @@ a {
     }
 
     .input-wrapper input {
-        padding: 3.5vh 5vw 1vh;
-        font-size: 5vw;
+        padding: 3.5vh 4vw 1vh;
+        font-size: 4vw;
         background-color: #fafafa;
         border-radius: 4vw;
     }
@@ -356,27 +356,26 @@ a {
     }
 
     .input-wrapper label {
-        margin-left: 2.5vw;
-        font-size: 3.8vw;
+        margin-left: 2vw;
+        font-size: 3.6vw;
     }
 
     .input-wrapper input:valid + label,
     .input-wrapper input:focus + label {
-        top: 1.5vh;
+        top: 1vh;
         font-size: 3.2vw;
     }
 
     #login-button {
-        margin-top: 1vh;
-        padding: 2vh 3.5vw;
+        padding: 1.5vh 3vw;
         border-radius: 5vw;
-        font-size: 4.2vw;
+        font-size: 4vw;
     }
 
     .forgot-password {
         margin-top: 3vh;
         font-weight: 500;
-        font-size: 4.2vw;
+        font-size: 4vw;
         color: #00376b;
         margin-bottom: 4vh;
     }
@@ -395,14 +394,14 @@ a {
         display: block;
         width: 100%;
         text-align: center;
-        padding: 1.5vh 0;
+        padding: 1vh 0;
         border: 1px solid #0095f6;
         color: #0095f6;
         font-weight: 600;
         border-radius: 5vw;
         font-size: 4vw;
         margin-top: 2vh;
-        margin-bottom: 3vh;
+        margin-bottom: 2vh;
     }
     .mobile-meta-logo {
         display: flex;
