@@ -295,15 +295,13 @@ a {
     }
     .mobile-header {
         display: block;
-        position: fixed;
-        top: 15px;
-        
-        left: 0;
         width: 100%;
         text-align: center;
         font-size: 17px;
         color: #8e8e8e;
         background-color: #fff;
+        padding: 15px 0;
+        box-sizing: border-box;
     }
     .main-container {
         width: 100%;
@@ -403,7 +401,7 @@ a {
         font-weight: 600;
         border-radius: 20px;
         font-size: 16px;
-        margin-top: 30px;
+        margin-top: 70px;
         margin-bottom: 20px;
     }
     .mobile-meta-logo {
@@ -571,9 +569,5 @@ body.dark-mode .show-hide-password svg path {
 .input-wrapper input[type="password"] {
     padding-right: 45px !important;
 }
-
-
-
-
 
 
